@@ -10,17 +10,17 @@
   },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.2",
-    "@truffle/hdwallet-provider": "^2.1.5",
+    "@truffle/hdwallet-provider": "^1.7.0",
     "@web3modal/ethereum": "^2.7.1",
     "@web3modal/react": "^2.7.1",
     "chai": "^4.3.7",
     "dotenv": "^16.0.3",
-    "ethers": "^5.7.2",
+    "ethers": "^6.7.1",
     "hardhat": "^2.17.3",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-hdwallet-provider": "^1.0.6",
     "viem": "^1.12.2",
     "wagmi": "^1.4.2"
   },
@@ -29,7 +29,7 @@
     "autoprefixer": "^10.4.9",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
-    "ethereum-waffle": "^3.4.4",
+    "ethereum-waffle": "^4.0.10",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
