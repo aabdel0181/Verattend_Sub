@@ -16,13 +16,13 @@ function pendingApplicants() {
     const checkInBtn = () => {
         window.alert(inputValue);
     };
-    const currentEventName = contract.getEvent.name
+
     return (
         <section className="bg-red-100 min-h-screen">
 
             <div className="text-center">
                 <h1 className="bg-red-100 text-red-600 textxl py-5 text-4xl">
-                    <b>Manage {currentEventName}</b>
+                    <b>Manage Event A</b>
                 </h1>
                 <h4 className="textxl py-5 text-2xl">
                     <b>
