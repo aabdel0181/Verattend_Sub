@@ -1,8 +1,11 @@
 import { React } from 'react'
 import { NavBar } from "../components/navBar"
 import Head from 'next/head'
+import { addedEvents } from './events'
 
 function myEvents() {
+    const Events = addedEvents || [];
+
     return (
         <section className="bg-red-100 min-h-screen">
             <center>
@@ -12,17 +15,28 @@ function myEvents() {
                 <h1 className="bg-red-100 text-red-600 textl py-5 text-1l">
                     <b>My Events</b>
                 </h1>
-                <ul class="w-full text-red-600">
-                    <li>Event 1 - EventName</li>
-                    <li>Event 2 - EventName</li>
-                    <li>Event 3 - EventName</li>
-                    <li>Event 4 - EventName</li>
-                    <li>Event 5 - EventName</li>
-                </ul>
-
+                {/* {Events.length === 0 ? (
+                    <p>No Events</p>
+                ) : (
+                    <ul className="w-full text-red-600">
+                         {Events.map((eventName, index) => (
+                            <li key={index} className="my-2">
+                                {eventName}
+                            </li>
+                        ))} 
+                    </ul>
+                )} */}
+                <ul className="w-full text-red-600">
+                        {/* {Events.map((eventName, index) => (
+                            <li key={index} className="my-2">
+                                {eventName}
+                            </li>
+                        ))} */}
+                        <li className="my-2">Penn Blockchain Conference</li>
+                        <li className="my-2">Layer 2 Workshop</li>
+                    </ul>
             </center>
         </section>
-    )
+    );
 }
-
 export default myEvents;
